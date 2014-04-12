@@ -16,4 +16,5 @@ node 'puppet.slave.db' {
 
 node 'puppet.slave.mail' {
 	include base
+	include postfix
 	}
