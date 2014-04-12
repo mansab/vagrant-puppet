@@ -2,8 +2,8 @@ class sudo {
 package { sudo:
 ensure => present,
 }
-if $operatingsystem == "CentOS" {
-package { "sudo":
+if $operatingsystem == "Ubuntu" {
+package { "sudo-ldap":
 ensure => present,
 require => Package["sudo"],
 }
