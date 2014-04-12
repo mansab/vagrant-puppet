@@ -4,7 +4,7 @@ class postfix::config {
 	group => postfix,
 	mode => 0644,
 	}
-file { "/etc/posfix/master.cf":
+file { "/etc/postfix/master.cf":
 	ensure => present,
 	source => "puppet://$puppetserver/modules/postfix/master.cf",
 	require => Class["postfix::install"],
