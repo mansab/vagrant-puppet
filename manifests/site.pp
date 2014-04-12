@@ -1,3 +1,3 @@
-node puppet.slave.wordpress {
-	include nginx
-}
+#node puppet.slave.wordpress {
+#	include nginx
+#}
