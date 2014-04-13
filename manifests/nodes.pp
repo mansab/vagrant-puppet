@@ -12,7 +12,7 @@ node 'puppet.slave.web' {
 	
 	apache::vhost { 'www.example.com':
 	port => 80,
-	docroot => '/var/www/www.example.com',
+	docroot => '/var/www/html/www.example.com',
 	ssl => false,
 	priority => 10,
 	serveraliases => 'home.example.com',
