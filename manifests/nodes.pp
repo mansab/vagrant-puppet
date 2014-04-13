@@ -8,6 +8,15 @@ node 'puppet.server' {
 
 node 'puppet.slave.web' {
 	include base
+	include apache
+	
+	apache::vhost { 'www.example.com':
+	port => 80,
+	docroot => '/var/www/www.example.com',
+	ssl => false,
+	priority => 10,
+	serveraliases => 'home.example.com',
+	}
 	}
 
 node 'puppet.slave.db' {
