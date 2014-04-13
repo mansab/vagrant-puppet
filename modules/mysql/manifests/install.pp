@@ -1,5 +1,5 @@
-class mysql::instal {
-	package { ["mysql-server", "mysql", "mysql-client"]:
+class mysql::install {
+	package { ["mysql-server", "mysql"]:
 	ensure => present,
 	require => User["mysql"],
 	}

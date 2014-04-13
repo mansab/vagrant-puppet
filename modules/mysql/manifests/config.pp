@@ -10,7 +10,7 @@ class mysql::config {
 	
 	file { "/var/lib/mysql":
 	owner => "mysql",
-	gid => "mysql",
+	group => "mysql",
 	recurse => true,
 	require => File["/etc/my.cnf"],
 	}

@@ -1,9 +1,9 @@
 class mysql::service {
-	service { "mysql":
+	service { "mysqld":
 	ensure => running,
 	hasstatus => true,
 	hasrestart => true,
-	enabled => true,
+	enable => true,
 	require => Class["mysql::config"],
 	}
 }
