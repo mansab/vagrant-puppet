@@ -12,6 +12,7 @@ node 'puppet.slave.web' {
 
 node 'puppet.slave.db' {
 	include base
+	include mysql
 	}
 
 node 'puppet.slave.mail' {
